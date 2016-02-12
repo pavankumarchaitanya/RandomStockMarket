@@ -56,7 +56,7 @@ public class ScheduledTasks {
     	{
     		double tempValue= 0;
     		Long multiplier = 1L;
-    		if(Math.random() < 0.5){
+    		if(Math.random() < 0.5){  // TODO : Move this to application.properties. Tweaking this value will make the market go up or down. A value less than 0.5 will make it go up, and greater than 0.5 will make the market go down! 
     		multiplier *= -1;
     		}
     		
@@ -90,7 +90,8 @@ public class ScheduledTasks {
     	
     	
     	
-    	System.out.println("Net Price Change :"  + sum);
+    	System.out.println("Net Price Change from Original :"  + sum);
+	
     	
     	System.out.println("Number of changes : " + numberOfChanges);
     	}
