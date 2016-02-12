@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ScheduledTasks {
 
-	@Value("${debug}")
+	@Value("${debugMode}")
 	private  boolean debugFlag;
 	
     private static final List<Stock> stockList = new ArrayList<Stock>();
